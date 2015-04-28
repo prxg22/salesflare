@@ -1,0 +1,71 @@
+[
+	{
+		"name": "Opportunity 1",
+		"group": "action",
+		"contact": {
+			"id": 1,
+			"name": "User 1"
+		},
+		"price": 140,
+		"stage": "Start",
+		"daysLeft": 3,
+		"subject": "New opportunity",
+		"user": "Paulo Ricardo"
+	},
+	
+	{
+		"name": "Opportunity 1",
+		"group": "action",
+		"contact": {
+			"id": 1,
+			"name": "User 1"
+		},
+		"price": 140,
+		"stage": "Start",
+		"daysLeft": 3,
+		"subject": "New opportunity",
+		"user": "Paulo Ricardo"
+	},
+
+	{
+		"name": "Opportunity 1",
+		"group": "action",
+		"contact": {
+			"id": 1,
+			"name": "User 1"
+		},
+		"price": 140,
+		"stage": "Start",
+		"daysLeft": 3,
+		"subject": "New opportunity",
+		"user": "Paulo Ricardo"
+	},
+	
+	{
+		"name": "Opportunity 2",
+		"group": "awaiting",
+		"contact": {
+			"id": 2,
+			"name": "User 2"
+		},
+		"price": 500,
+		"stage": "Middle",
+		"daysLeft": 6,
+		"subject": "Commercial tasks",
+		"user": "Livien"
+	},
+
+	{
+		"name": "Opportunity 3",
+		"group": "followUp",
+		"contact": {
+			"id": 1,
+			"name": "User 1"
+		},
+		"price": 200,
+		"stage": "End",
+		"daysLeft": 9,
+		"subject": "Other subject",
+		"user": "Joren"
+	}
+]

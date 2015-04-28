@@ -1,0 +1,58 @@
+md-list-item{
+	padding: 0 5%;
+}
+
+md-list-item.md-3-line > .md-avatar:first-child{
+	  width: 90px;
+	  height: 90px;
+}
+
+md-list-item.md-3-line .md-list-item-text, md-list-item.md-3-line > .md-no-style .md-list-item-text{
+	padding: 24px 0;
+}
+
+.first-button{
+	margin-left: 0;
+}
+
+md-switch{
+	margin: 0;
+	padding: 0;
+}
+
+
+.panel{
+	margin: 10px 0;
+}
+
+.op-list p{
+	margin: 0px;
+}
+
+.op-list{
+	margin-top: 8px;
+}
+
+p.username{
+	text-decoration: underline;
+	color: rgba(0,0,0,0.54);
+}
+
+.md-list-item-sidebar{
+	padding: 24px;
+}
+
+md-list-item.md-3-line .md-list-item-text p, 
+md-list-item.md-3-line > .md-no-style .md-list-item-text p,
+md-list-item.md-3-line .md-list-item-text h3, 
+md-list-item.md-3-line > .md-no-style .md-list-item-text h3,
+md-list-item.md-3-line .md-list-item-text h4, 
+md-list-item.md-3-line > .md-no-style .md-list-item-text h4
+{
+	margin-left: 10px;
+}
+
+md-divider{
+	margin: 10px 0;
+}
+

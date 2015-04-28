@@ -1,0 +1,48 @@
+<md-whiteframe layout="column" ng-repeat="group in groups" class="md-whiteframe-z1" ng-class="{panel: $index > 0}" layout-wrap>
+	<md-toolbar>
+		<div class="md-toolbar-tools">
+      		<h2 class="md-flex">{{group.name}}</h2>
+    	</div>
+	</md-toolbar>
+	<md-content layout-wrap>
+		<md-list>
+			<md-whiteframe layout="row" ng-repeat-start="op in opportunities | filter: {group : group.group}" >
+				<md-list-item class="md-3-line" layout-align="start center" layout-sm="column" layout-align-sm="center">
+					<!--  Avatar image -->
+					<img ng-src="img/{{op.contact.id}}.jpg" class="md-avatar" alt="{{op.contact.name}}" />
+
+					<!--  Opportunity description -->
+					<md-whiteframe layout="column">
+						<div class="md-list-item-text" layout="column">
+							<h3>{{op.contact.name}} - {{op.name}}</h3>
+							<h4>{{op.price}} EUR - {{op.stage}}</h4>
+							<p>{{ op.subject }}</p>
+						</div>
+					
+						<!--  Opportunity buttons -->
+						<md-whiteframe layout-gt-sm="row" layout-sm="column" layout-align-gt-sm="start" layout-align-sm="center" layout-wrap>
+							<!-- buttons -->
+							<md-button class="md-raised md-primary">Feed</md-button>
+							<md-button class="md-raised md-primary">Schedule</md-button>
+							<md-button class="md-raised md-primary">Assign</md-button>
+						</md-whiteframe>
+					</md-whiteframe>
+				</md-list-item>
+
+				<!--  Opportunity right sidebar -->
+				<div layout="column" layout-align="start start" class="md-list-item-sidebar md-secondary">
+					<div layout="row">
+						<md-switch>
+						</md-switch>
+						<p align="center">{{op.daysLeft}}d</p>
+						<md-button ng-click="itemMenuClick(op)" class="md-icon-button" aria-label="Opportunity Menu">
+							<md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+						</md-button>
+					</div>
+					<p align="center" class="md-caption username">{{op.user}}</p>
+				</div>
+			</md-whiteframe>
+			<md-divider ng-if="!$last" ng-repeat-end=""></md-divider>
+		</md-list>
+	</md-content>
+</md-whiteframe>
