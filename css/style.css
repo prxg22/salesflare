@@ -1,58 +1,133 @@
-md-list-item{
-	padding: 0 5%;
+.op-list, .cont-details{
+	font-size: 1.1rem;
 }
 
-md-list-item.md-3-line > .md-avatar:first-child{
-	  width: 90px;
-	  height: 90px;
+.op-list md-icon{
+	width: 1rem;
 }
 
-md-list-item.md-3-line .md-list-item-text, md-list-item.md-3-line > .md-no-style .md-list-item-text{
-	padding: 24px 0;
+/** TOOLBAR */
+.md-toolbar-tools{
+	color: white;
 }
 
-.first-button{
-	margin-left: 0;
+.animate-show{
+	opacity: 1;
 }
 
-md-switch{
+.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all linear 0.35s;
+  transition: all linear 0.35s;
+}
+
+.animate-show.ng-hide {
+  opacity: 0;
+}
+
+/* CONT-AVATAR */
+.cont-avatar img{
+	margin: 20px 6.5%;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+/* OP-CONTENT */
+.op-content{
+	margin: 20px 0 0 0;
+}
+
+.op-content p, 
+.op-content h3, 
+.op-content h4{
 	margin: 0;
+}
+
+/* OP-SIDEBAR */
+.op-sidebar md-switch{
+	margin: 14px 1px 0 0;
+	padding: 0;
+	-webkit-align-items: top;
+	align-items: top;
+}
+
+.op-sidebar md-switch .md-bar{
+	width: 27px;
+	
+}
+.op-sidebar md-switch .md-thumb{
+	width: 14px;
+	height: 14px;
+	top: 3px;
+}
+
+.op-sidebar p{
+	margin: 20px 2px 0 0;
+}
+
+.op-sidebar .md-button{
+	margin-right: 0;
+	min-width: 25%;
+}
+
+.op-sidebar md-icon{
+	width: 100%;
+}
+
+/* OP-FOOTER */
+.op-footer .md-button{
+	margin: 10px 0;
+	display: inline-block;
+	font-size: 1rem;
+	min-width: 6em;
+}
+
+/* CONT-SOCIALS */
+.socials .md-button{
+	margin: auto 2px;
+	width: 32px;
+}
+
+/* CONT-DETAILS */
+.cont-details .md-subheader{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.cont-details .md-subheader .md-subheader-inner{
+	padding: 10px 0 5px 0;
+}
+
+[layout-padding].cont-details{
+	padding: 8px 12px;
+}
+
+.cont-details md-list-item > md-icon:first-child{
+	margin: auto 4%  47px auto;
+}
+.cont-details md-list-item .md-list-item-text{
 	padding: 0;
 }
 
-
-.panel{
-	margin: 10px 0;
+.cont-details md-list-item .md-list-item-text h4{
+	line-height: 1.1em;
 }
-
-.op-list p{
-	margin: 0px;
-}
-
-.op-list{
-	margin-top: 8px;
-}
-
-p.username{
-	text-decoration: underline;
+.cont-details .md-list-item-text p.caption{
+	font-size: 1.2rem;
 	color: rgba(0,0,0,0.54);
 }
 
-.md-list-item-sidebar{
-	padding: 24px;
+p.caption md-divider{
+	position: static;
+	margin: 20px 0;
 }
 
-md-list-item.md-3-line .md-list-item-text p, 
-md-list-item.md-3-line > .md-no-style .md-list-item-text p,
-md-list-item.md-3-line .md-list-item-text h3, 
-md-list-item.md-3-line > .md-no-style .md-list-item-text h3,
-md-list-item.md-3-line .md-list-item-text h4, 
-md-list-item.md-3-line > .md-no-style .md-list-item-text h4
-{
-	margin-left: 10px;
+
+/* CLASSES */
+.clickable{
+	cursor: pointer;
 }
 
-md-divider{
-	margin: 10px 0;
+.sub-divider{
+	margin-bottom: 20px;
 }
-

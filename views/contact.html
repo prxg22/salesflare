@@ -1,0 +1,90 @@
+<md-whiteframe layout="column" class="md-whiteframe-z1" ng-class="{panel: $index > 0}" layout-wrap>
+	<md-toolbar>
+		<div class="md-toolbar-tools">
+			<md-button ng-click="goToHome()" class="md-icon-button">
+				<md-icon md-svg-icon="img/icons/close.svg"></md-icon>
+			</md-button>
+			<h2 class="md-flex">{{contact.name}}</h2>
+			<span flex></span>
+			<md-button class="md-icon-button">
+				<md-icon md-svg-icon="img/icons/pencil.svg"></md-icon>
+			</md-button>
+		</div>
+	</md-toolbar>
+	<md-content class="cont-details" layout="column">
+		<!-- Contact Avatar -->
+		<md-whiteframe layout="row">
+			<div class="cont-avatar" flex="33" layout = "row"layout-align="center">
+				<img ng-src="img/{{contact.id}}.jpg" alt="{{contact.name}}">
+			</div>
+			<!-- Contact Introduction -->
+			<div class="cont-introduction" layout-align="center start" layout="column" flex>
+				<h2 class="">{{contact.name}}</h2>
+				<h3 class="">
+					<span ng-repeat="position in contact.positions">
+						{{position.position}} at {{position.company}} <span ng-if="!$last">,</span>
+					</span>
+				</h3>
+			</div>
+		</md-whiteframe>
+
+		<md-divider></md-divider>
+		<!-- Social -->
+		<md-whiteframe layout="row" layout-wrap class="socials">
+			<md-button class="md-icon-button">
+				<md-icon md-svg-icon="img/icons/linkedin.svg"></md-icon>
+			</md-button>
+			<md-button class="md-icon-button">
+				<md-icon md-svg-icon="img/icons/facebook-box.svg"></md-icon>
+			</md-button>
+		</md-whiteframe>
+		<md-divider></md-divider>
+
+		<md-whiteframe layout-padding class="cont-details">
+			<md-subheader class="md-no-sticky">Contact Details</md-subheader>
+			<md-divider class="sub-divider"></md-divider>
+			<md-list-item class="md-2-line" ng-repeat="email in contact.email">
+				<md-icon class="md-primary" md-svg-icon="img/icons/email.svg" ng-if="$index === 0"></md-icon>
+				<div class="md-list-item-text" ng-class="{'md-offset': $index != 0 }">
+					<h4> {{ email.addr }} </h4>
+					<p class="caption"> 
+						{{ email.cat }} 
+						<md-divider></md-divider>
+					</p>
+				</div>
+			</md-list-item>
+			<md-list-item class="md-2-line" ng-repeat="phone in contact.phones">
+				<md-icon class="md-primary" md-svg-icon="img/icons/phone.svg" ng-if="$index === 0"></md-icon>
+				<div class="md-list-item-text" ng-class="{'md-offset': $index != 0 }">
+					<h4> {{ phone.num }} </h4>
+					<p class="caption"> 
+						{{ phone.cat }} 
+						<md-divider></md-divider>
+					</p>
+				</div>
+			</md-list-item>
+			<md-list-item class="md-2-line" ng-repeat="addr in contact.addr">
+				<md-icon class="md-primary" md-svg-icon="img/icons/map-marker.svg" ng-if="$index === 0"></md-icon>
+				<div class="md-list-item-text" ng-class="{'md-offset': $index != 0 }">
+					<h4> {{ addr.line }} </h4>
+					<p class="caption"> 
+						{{ addr.cat }} 
+						<md-divider></md-divider>
+					</p>
+				</div>
+			</md-list-item>
+			<md-subheader class="md-no-sticky">Positions</md-subheader>
+			<md-divider></md-divider>
+			<md-list-item class="md-2-line" ng-repeat="position in contact.positions">
+				<md-icon class="md-primary" md-svg-icon="img/icons/account.svg" ng-if="$index === 0"></md-icon>
+				<div class="md-list-item-text" ng-class="{'md-offset': $index != 0 }">
+					<h4> {{ position.position }} </h4>
+					<p class="caption"> 
+						{{ position.company }} 
+						<md-divider></md-divider>
+					</p>
+				</div>
+			</md-list-item>
+		</md-whiteframe>
+	</md-content>
+</md-whiteframe>

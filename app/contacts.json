@@ -1,49 +1,51 @@
 [
 	{
-		id: 1,
-		name: "User 1",
-		email: {
-			addr: "user1@gmail.com",
-			cat: "work"
-		},
-		tel: {
-			num: "+55 61 9283-9281",
-			cat: "mobile"
-		},
-		addr: {
-			line: "Blvd du Roi Albert II 38, 1030 Schaarbek",
-			cat: "work"
-		},
-		positions: [
+		"id": 1,
+		"name": "User 1",
+		"email": [{
+			"addr": "user1@gmail.com",
+			"cat": "work"
+		}],
+		"phones": [{
+			"num": "+55 61 9283-9281",
+			"cat": "mobile"
+		}],
+		"addr": [{
+			"line": "Blvd du Roi Albert II 38, 1030 Schaarbek",
+			"cat": "work"
+		}],
+		"positions": [
 			{
-				company: "Salesflare",
-				position: "CEO"
+				"company": "Salesflare",
+				"position": "CEO"
 			}
 		]
 
 	},
 
 	{
-		id: 2,
-		name: "User 2",
-		email: {
-			addr: "user2@gmail.com",
-			cat: "personal"
-		},
-		tel: {
-			num: "+55 61 3333-5240",
-			cat: "work"
-		},
-		addr: {
-			line: "SQN 402 Bloco O apt 130, Asa Norte",
-			cat: "work"
-		},
-		positions: [
+		"id": 2,
+		"name": "User 2",
+		"email": [{
+			"addr": "user2@gmail.com",
+			"cat": "personal"
+		}],
+		"phones": [{
+			"num": "+55 61 3333-5240",
+			"cat": "work"
+		}],
+		"addr": [
 			{
-				company: "UnB",
-				position: "Marketing Consultant"
+				"line": "SQN 402 Bloco O apt 130, Asa Norte",
+				"cat": "work"
+			}
+		],
+		"positions": [
+			{
+				"company": "UnB",
+				"position": "Marketing Consultant"
 			}
 		]
 
-	},
+	}
 ]

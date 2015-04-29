@@ -8,7 +8,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$mdThemingProvider', '$mdIc
 		templateUrl: 'views/home.html',
 		controller: 'OpportunitiesController'
 	})
-	.state('home.contact', {
+	.state('contact', {
 		url:'/contact/:id',
 		templateUrl: 'views/contact.html',
 		controller: 'ContactController'
@@ -40,9 +40,5 @@ app.config(['$stateProvider', '$urlRouterProvider', '$mdThemingProvider', '$mdIc
 			default: '200'
 		})
 		.accentPalette('blue');
-
-	// configuring icons
-	$mdIconProvider
-		.icon('menu', '../img/icons/menu.svg');
 }]);
 

@@ -1,4 +1,4 @@
-app.controller('OpportunitiesController', ['$scope', '$http', function($scope, $http){
+app.controller('OpportunitiesController', ['$scope', '$http', '$state', function($scope, $http, $state){
 	$scope.opportunities = [];
 	$scope.groups = groups = [
 		{name: 'Action Needed', collapse: false, group: 'action'},
@@ -16,8 +16,14 @@ app.controller('OpportunitiesController', ['$scope', '$http', function($scope, $
 		});
 	};
 
-	$scope.itemMenuClick = function(op){
-		op.menu = !op.menu;
-	}
+	$scope.toggleMenuClick = function($event){
+		console.log(angular.element($event.target));
+	};
+
+	$scope.goToContact = function(contact){
+		$state.go('contact', {id: contact.id});
+	};
+	
+
 	getOpportunities();
 }])
