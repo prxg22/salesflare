@@ -16,8 +16,8 @@ app.controller('OpportunitiesController', ['$scope', '$http', '$state', function
 		});
 	};
 
-	$scope.toggleMenuClick = function($event){
-		console.log(angular.element($event.target));
+	$scope.toggleMenuClick = function(op){
+			op.menu = !op.menu;
 	};
 
 	$scope.goToContact = function(contact){

@@ -3,7 +3,7 @@
 }
 
 .op-list md-icon{
-	width: 1rem;
+	width: 1.1rem;
 }
 
 /** TOOLBAR */
@@ -72,6 +72,21 @@
 
 .op-sidebar md-icon{
 	width: 100%;
+}
+
+.op-sidebar .menu p{
+	margin: 0;
+}
+.op-sidebar .menu{
+	position: absolute;
+	right: 5px;
+	z-index: 999999;
+	margin: 0;
+}
+
+.op-sidebar .menu a{
+	text-decoration: none;
+	color: black;
 }
 
 /* OP-FOOTER */
