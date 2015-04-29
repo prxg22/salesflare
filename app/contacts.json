@@ -6,10 +6,16 @@
 			"addr": "user1@gmail.com",
 			"cat": "work"
 		}],
-		"phones": [{
-			"num": "+55 61 9283-9281",
-			"cat": "mobile"
-		}],
+		"phones": [
+			{
+				"num": "+55 61 9283-9281",
+				"cat": "mobile"
+			},
+			{
+				"num": "+55 61 9283-9281",
+				"cat": "mobile"
+			}
+		],
 		"addr": [{
 			"line": "Blvd du Roi Albert II 38, 1030 Schaarbek",
 			"cat": "work"
@@ -18,6 +24,10 @@
 			{
 				"company": "Salesflare",
 				"position": "CEO"
+			},
+			{
+				"company": "CJR",
+				"position": "Human Resources Manager"
 			}
 		]
 

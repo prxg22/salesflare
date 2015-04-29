@@ -32,12 +32,12 @@
 				<md-whiteframe class="op-sidebar" flex="30" layout="row" layout-align="end">
 					<md-switch layout-align="center start"></md-switch>
 					<p>{{op.daysLeft}}d</p>
-					<md-whiteframe layout="column" layout-fill> 
+					<md-whiteframe layout="column"> 
 						<md-button ng-click="toggleMenuClick(op)" class="md-icon-button" aria-label="Opportunity Menu">
 							<md-icon md-svg-icon="img/icons/dots-vertical.svg"></md-icon>
 						</md-button>
 						<!-- MENU -->
-						<md-card ng-click="toggleMenuClick(op)" class="md-whiteframe-z3 menu" ng-show="op.menu">
+						<md-card ng-click="toggleMenuClick(op)" class="md-whiteframe-z3 menu animate-show" ng-show="op.menu">
 								<md-list>
 									<md-list-item>
 										<a href="#"> Edit Opportunity </a>
