@@ -16,7 +16,8 @@ app.controller('OpportunitiesController', ['$scope', '$http', '$state', function
 		});
 	};
 
-	$scope.toggleMenuClick = function(op){
+	$scope.toggleMenuClick = function(op, $event){
+			
 			op.menu = !op.menu;
 	};
 
