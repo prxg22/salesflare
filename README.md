@@ -1,2 +1,2 @@
 # salesflare
-Salesflare exercise
+Salesflare hiring test
